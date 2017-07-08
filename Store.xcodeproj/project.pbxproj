@@ -22,6 +22,8 @@
 		090DEF661F10C7B300EB73F1 /* ZYSqliteModelTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 090DEF651F10C7B300EB73F1 /* ZYSqliteModelTool.m */; };
 		090DEF691F10C84C00EB73F1 /* ZYModelTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 090DEF681F10C84B00EB73F1 /* ZYModelTool.m */; };
 		090DEF6C1F10D11200EB73F1 /* ZYStudentEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 090DEF6B1F10D11200EB73F1 /* ZYStudentEntity.m */; };
+		090DEF6F1F10D66F00EB73F1 /* ZYSqliteModelToolTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 090DEF6E1F10D66F00EB73F1 /* ZYSqliteModelToolTest.m */; };
+		090DEF711F10D68000EB73F1 /* ZYModelToolTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 090DEF701F10D68000EB73F1 /* ZYModelToolTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,8 @@
 		090DEF6A1F10D11200EB73F1 /* ZYStudentEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYStudentEntity.h; sourceTree = "<group>"; };
 		090DEF6B1F10D11200EB73F1 /* ZYStudentEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYStudentEntity.m; sourceTree = "<group>"; };
 		090DEF6D1F10D26D00EB73F1 /* ZYModelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYModelProtocol.h; sourceTree = "<group>"; };
+		090DEF6E1F10D66F00EB73F1 /* ZYSqliteModelToolTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYSqliteModelToolTest.m; sourceTree = "<group>"; };
+		090DEF701F10D68000EB73F1 /* ZYModelToolTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYModelToolTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +156,8 @@
 			children = (
 				090DEF401F10AAE800EB73F1 /* StoreTests.m */,
 				090DEF5F1F10B83100EB73F1 /* ZYSqliteToolTest.m */,
+				090DEF6E1F10D66F00EB73F1 /* ZYSqliteModelToolTest.m */,
+				090DEF701F10D68000EB73F1 /* ZYModelToolTest.m */,
 				090DEF421F10AAE800EB73F1 /* Info.plist */,
 			);
 			path = StoreTests;
@@ -342,6 +348,8 @@
 			files = (
 				090DEF601F10B83100EB73F1 /* ZYSqliteToolTest.m in Sources */,
 				090DEF411F10AAE800EB73F1 /* StoreTests.m in Sources */,
+				090DEF711F10D68000EB73F1 /* ZYModelToolTest.m in Sources */,
+				090DEF6F1F10D66F00EB73F1 /* ZYSqliteModelToolTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
