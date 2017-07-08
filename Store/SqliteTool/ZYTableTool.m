@@ -8,7 +8,7 @@
 
 #import "ZYTableTool.h"
 #import "ZYModelTool.h"
-#import "ZYSqliteToo.h"
+#import "ZYSqliteTool.h"
 
 @implementation ZYTableTool
 + (NSArray *)tableSortedColumnNames:(Class)cls uid:(NSString *)uid
