@@ -9,6 +9,7 @@
 #import "ZYSqliteModelTool.h"
 #import "ZYModelTool.h"
 #import "ZYSqliteTool.h"
+#import "ZYTableTool.h"
 
 @implementation ZYSqliteModelTool
 
@@ -30,4 +31,13 @@
     
     return [ZYSqliteTool deal:createTableSql uid:uid];
 }
+
++ (BOOL)isTableRequiredUpdate:(Class)cls uid:(NSString *)uid
+{
+    NSArray *modelNames = [ZYModelTool allTableSortedIvarNames:cls];
+    NSArray *tableNames = [ZYTableTool tableSortedColumnNames:cls uid:uid];
+    
+    return ![modelNames isEqualToArray:tableNames];
+}
+
 @end

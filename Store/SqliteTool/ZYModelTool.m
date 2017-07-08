@@ -75,6 +75,16 @@
     return [result componentsJoinedByString:@","];
 }
 
++ (NSArray *)allTableSortedIvarNames:(Class)cls
+{
+    NSDictionary *dic = [self ocClassIvarNameTypeDict:cls];
+    NSArray *keys = dic.allKeys;
+    keys = [keys sortedArrayUsingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
+        return [obj1 compare:obj2];
+    }];
+    return keys;
+}
+
 /**
  利用runtime转出来的类型对应sqlite里面的类型
 

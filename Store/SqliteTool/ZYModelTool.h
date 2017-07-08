@@ -42,4 +42,10 @@
  但是这里只有属性，所以拼接key-value即可
  */
 + (NSString *)sqliteStringForColumnNamesAndTypes:(Class)cls;
+
+
+/**
+ 获取model里面所有有用的propertyName，并排序
+ */
++ (NSArray *)allTableSortedIvarNames:(Class)cls;
 @end

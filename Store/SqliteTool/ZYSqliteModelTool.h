@@ -18,4 +18,11 @@
  @return 创建是否成功
  */
 + (BOOL)createTable:(Class)cls uid:(NSString *)uid;
+
+
+/**
+ 判断一个数据库表是否需要更新，主要就是与本次建立同一表的时候，判断根据本次的model生成的字段名是否与已经存在的数据库表
+ 字段名是否完全一样
+ */
++ (BOOL)isTableRequiredUpdate:(Class)cls uid:(NSString *)uid;
 @end

@@ -24,6 +24,7 @@
 		090DEF6C1F10D11200EB73F1 /* ZYStudentEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 090DEF6B1F10D11200EB73F1 /* ZYStudentEntity.m */; };
 		090DEF6F1F10D66F00EB73F1 /* ZYSqliteModelToolTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 090DEF6E1F10D66F00EB73F1 /* ZYSqliteModelToolTest.m */; };
 		090DEF711F10D68000EB73F1 /* ZYModelToolTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 090DEF701F10D68000EB73F1 /* ZYModelToolTest.m */; };
+		090DEF741F11151C00EB73F1 /* ZYTableTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 090DEF731F11151C00EB73F1 /* ZYTableTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,8 @@
 		090DEF6D1F10D26D00EB73F1 /* ZYModelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYModelProtocol.h; sourceTree = "<group>"; };
 		090DEF6E1F10D66F00EB73F1 /* ZYSqliteModelToolTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYSqliteModelToolTest.m; sourceTree = "<group>"; };
 		090DEF701F10D68000EB73F1 /* ZYModelToolTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYModelToolTest.m; sourceTree = "<group>"; };
+		090DEF721F11151C00EB73F1 /* ZYTableTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYTableTool.h; sourceTree = "<group>"; };
+		090DEF731F11151C00EB73F1 /* ZYTableTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYTableTool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +184,8 @@
 				090DEF651F10C7B300EB73F1 /* ZYSqliteModelTool.m */,
 				090DEF671F10C84B00EB73F1 /* ZYModelTool.h */,
 				090DEF681F10C84B00EB73F1 /* ZYModelTool.m */,
+				090DEF721F11151C00EB73F1 /* ZYTableTool.h */,
+				090DEF731F11151C00EB73F1 /* ZYTableTool.m */,
 				090DEF6D1F10D26D00EB73F1 /* ZYModelProtocol.h */,
 			);
 			path = SqliteTool;
@@ -331,6 +336,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				090DEF741F11151C00EB73F1 /* ZYTableTool.m in Sources */,
 				090DEF2B1F10AAE700EB73F1 /* ViewController.m in Sources */,
 				090DEF281F10AAE700EB73F1 /* AppDelegate.m in Sources */,
 				090DEF661F10C7B300EB73F1 /* ZYSqliteModelTool.m in Sources */,
@@ -581,6 +587,7 @@
 				090DEF521F10AAE800EB73F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		090DEF531F10AAE800EB73F1 /* Build configuration list for PBXNativeTarget "StoreTests" */ = {
 			isa = XCConfigurationList;
@@ -589,6 +596,7 @@
 				090DEF551F10AAE800EB73F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		090DEF561F10AAE800EB73F1 /* Build configuration list for PBXNativeTarget "StoreUITests" */ = {
 			isa = XCConfigurationList;
@@ -597,6 +605,7 @@
 				090DEF581F10AAE800EB73F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
