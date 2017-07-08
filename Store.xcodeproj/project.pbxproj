@@ -17,6 +17,8 @@
 		090DEF411F10AAE800EB73F1 /* StoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 090DEF401F10AAE800EB73F1 /* StoreTests.m */; };
 		090DEF4C1F10AAE800EB73F1 /* StoreUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 090DEF4B1F10AAE800EB73F1 /* StoreUITests.m */; };
 		090DEF5C1F10AC5500EB73F1 /* ZYSqliteTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 090DEF5B1F10AC5500EB73F1 /* ZYSqliteTool.m */; };
+		090DEF601F10B83100EB73F1 /* ZYSqliteToolTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 090DEF5F1F10B83100EB73F1 /* ZYSqliteToolTest.m */; };
+		090DEF631F10BA9300EB73F1 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 090DEF621F10BA9300EB73F1 /* libsqlite3.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		090DEF4D1F10AAE800EB73F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		090DEF5A1F10AC5500EB73F1 /* ZYSqliteTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYSqliteTool.h; sourceTree = "<group>"; };
 		090DEF5B1F10AC5500EB73F1 /* ZYSqliteTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYSqliteTool.m; sourceTree = "<group>"; };
+		090DEF5F1F10B83100EB73F1 /* ZYSqliteToolTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYSqliteToolTest.m; sourceTree = "<group>"; };
+		090DEF621F10BA9300EB73F1 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				090DEF631F10BA9300EB73F1 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +95,7 @@
 				090DEF3F1F10AAE700EB73F1 /* StoreTests */,
 				090DEF4A1F10AAE800EB73F1 /* StoreUITests */,
 				090DEF211F10AAE700EB73F1 /* Products */,
+				090DEF611F10BA9300EB73F1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -133,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				090DEF401F10AAE800EB73F1 /* StoreTests.m */,
+				090DEF5F1F10B83100EB73F1 /* ZYSqliteToolTest.m */,
 				090DEF421F10AAE800EB73F1 /* Info.plist */,
 			);
 			path = StoreTests;
@@ -154,6 +161,14 @@
 				090DEF5B1F10AC5500EB73F1 /* ZYSqliteTool.m */,
 			);
 			path = SqliteTool;
+			sourceTree = "<group>";
+		};
+		090DEF611F10BA9300EB73F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				090DEF621F10BA9300EB73F1 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,6 +320,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				090DEF601F10B83100EB73F1 /* ZYSqliteToolTest.m in Sources */,
 				090DEF411F10AAE800EB73F1 /* StoreTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
