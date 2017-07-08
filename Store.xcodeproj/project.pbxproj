@@ -16,6 +16,7 @@
 		090DEF361F10AAE700EB73F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 090DEF341F10AAE700EB73F1 /* LaunchScreen.storyboard */; };
 		090DEF411F10AAE800EB73F1 /* StoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 090DEF401F10AAE800EB73F1 /* StoreTests.m */; };
 		090DEF4C1F10AAE800EB73F1 /* StoreUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 090DEF4B1F10AAE800EB73F1 /* StoreUITests.m */; };
+		090DEF5C1F10AC5500EB73F1 /* ZYSqliteTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 090DEF5B1F10AC5500EB73F1 /* ZYSqliteTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		090DEF471F10AAE800EB73F1 /* StoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		090DEF4B1F10AAE800EB73F1 /* StoreUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoreUITests.m; sourceTree = "<group>"; };
 		090DEF4D1F10AAE800EB73F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		090DEF5A1F10AC5500EB73F1 /* ZYSqliteTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYSqliteTool.h; sourceTree = "<group>"; };
+		090DEF5B1F10AC5500EB73F1 /* ZYSqliteTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYSqliteTool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +150,8 @@
 		090DEF591F10AB2D00EB73F1 /* SqliteTool */ = {
 			isa = PBXGroup;
 			children = (
+				090DEF5A1F10AC5500EB73F1 /* ZYSqliteTool.h */,
+				090DEF5B1F10AC5500EB73F1 /* ZYSqliteTool.m */,
 			);
 			path = SqliteTool;
 			sourceTree = "<group>";
@@ -213,6 +218,7 @@
 		090DEF181F10AAE700EB73F1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = ZY;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "王志盼";
 				TargetAttributes = {
@@ -290,6 +296,7 @@
 				090DEF2B1F10AAE700EB73F1 /* ViewController.m in Sources */,
 				090DEF281F10AAE700EB73F1 /* AppDelegate.m in Sources */,
 				090DEF251F10AAE700EB73F1 /* main.m in Sources */,
+				090DEF5C1F10AC5500EB73F1 /* ZYSqliteTool.m in Sources */,
 				090DEF311F10AAE700EB73F1 /* Store.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
