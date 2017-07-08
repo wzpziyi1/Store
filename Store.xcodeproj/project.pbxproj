@@ -19,6 +19,9 @@
 		090DEF5C1F10AC5500EB73F1 /* ZYSqliteTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 090DEF5B1F10AC5500EB73F1 /* ZYSqliteTool.m */; };
 		090DEF601F10B83100EB73F1 /* ZYSqliteToolTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 090DEF5F1F10B83100EB73F1 /* ZYSqliteToolTest.m */; };
 		090DEF631F10BA9300EB73F1 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 090DEF621F10BA9300EB73F1 /* libsqlite3.tbd */; };
+		090DEF661F10C7B300EB73F1 /* ZYSqliteModelTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 090DEF651F10C7B300EB73F1 /* ZYSqliteModelTool.m */; };
+		090DEF691F10C84C00EB73F1 /* ZYModelTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 090DEF681F10C84B00EB73F1 /* ZYModelTool.m */; };
+		090DEF6C1F10D11200EB73F1 /* ZYStudentEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 090DEF6B1F10D11200EB73F1 /* ZYStudentEntity.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +63,13 @@
 		090DEF5B1F10AC5500EB73F1 /* ZYSqliteTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYSqliteTool.m; sourceTree = "<group>"; };
 		090DEF5F1F10B83100EB73F1 /* ZYSqliteToolTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYSqliteToolTest.m; sourceTree = "<group>"; };
 		090DEF621F10BA9300EB73F1 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		090DEF641F10C7B300EB73F1 /* ZYSqliteModelTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYSqliteModelTool.h; sourceTree = "<group>"; };
+		090DEF651F10C7B300EB73F1 /* ZYSqliteModelTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYSqliteModelTool.m; sourceTree = "<group>"; };
+		090DEF671F10C84B00EB73F1 /* ZYModelTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYModelTool.h; sourceTree = "<group>"; };
+		090DEF681F10C84B00EB73F1 /* ZYModelTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYModelTool.m; sourceTree = "<group>"; };
+		090DEF6A1F10D11200EB73F1 /* ZYStudentEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYStudentEntity.h; sourceTree = "<group>"; };
+		090DEF6B1F10D11200EB73F1 /* ZYStudentEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYStudentEntity.m; sourceTree = "<group>"; };
+		090DEF6D1F10D26D00EB73F1 /* ZYModelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYModelProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +128,8 @@
 				090DEF291F10AAE700EB73F1 /* ViewController.h */,
 				090DEF2A1F10AAE700EB73F1 /* ViewController.m */,
 				090DEF2C1F10AAE700EB73F1 /* Main.storyboard */,
+				090DEF6A1F10D11200EB73F1 /* ZYStudentEntity.h */,
+				090DEF6B1F10D11200EB73F1 /* ZYStudentEntity.m */,
 				090DEF321F10AAE700EB73F1 /* Assets.xcassets */,
 				090DEF341F10AAE700EB73F1 /* LaunchScreen.storyboard */,
 				090DEF371F10AAE700EB73F1 /* Info.plist */,
@@ -159,6 +171,11 @@
 			children = (
 				090DEF5A1F10AC5500EB73F1 /* ZYSqliteTool.h */,
 				090DEF5B1F10AC5500EB73F1 /* ZYSqliteTool.m */,
+				090DEF641F10C7B300EB73F1 /* ZYSqliteModelTool.h */,
+				090DEF651F10C7B300EB73F1 /* ZYSqliteModelTool.m */,
+				090DEF671F10C84B00EB73F1 /* ZYModelTool.h */,
+				090DEF681F10C84B00EB73F1 /* ZYModelTool.m */,
+				090DEF6D1F10D26D00EB73F1 /* ZYModelProtocol.h */,
 			);
 			path = SqliteTool;
 			sourceTree = "<group>";
@@ -310,7 +327,10 @@
 			files = (
 				090DEF2B1F10AAE700EB73F1 /* ViewController.m in Sources */,
 				090DEF281F10AAE700EB73F1 /* AppDelegate.m in Sources */,
+				090DEF661F10C7B300EB73F1 /* ZYSqliteModelTool.m in Sources */,
+				090DEF6C1F10D11200EB73F1 /* ZYStudentEntity.m in Sources */,
 				090DEF251F10AAE700EB73F1 /* main.m in Sources */,
+				090DEF691F10C84C00EB73F1 /* ZYModelTool.m in Sources */,
 				090DEF5C1F10AC5500EB73F1 /* ZYSqliteTool.m in Sources */,
 				090DEF311F10AAE700EB73F1 /* Store.xcdatamodeld in Sources */,
 			);
