@@ -103,6 +103,7 @@
 		090DEF221F10AAE700EB73F1 /* Store */ = {
 			isa = PBXGroup;
 			children = (
+				090DEF591F10AB2D00EB73F1 /* SqliteTool */,
 				090DEF261F10AAE700EB73F1 /* AppDelegate.h */,
 				090DEF271F10AAE700EB73F1 /* AppDelegate.m */,
 				090DEF291F10AAE700EB73F1 /* ViewController.h */,
@@ -141,6 +142,13 @@
 				090DEF4D1F10AAE800EB73F1 /* Info.plist */,
 			);
 			path = StoreUITests;
+			sourceTree = "<group>";
+		};
+		090DEF591F10AB2D00EB73F1 /* SqliteTool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SqliteTool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
