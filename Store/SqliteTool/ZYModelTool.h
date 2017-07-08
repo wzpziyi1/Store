@@ -17,6 +17,11 @@
 
 
 /**
+ 临时表名称
+ */
++ (NSString *)tmpTableName:(Class)cls;
+
+/**
  利用runtime把这个class的所有属性转化出来，按照 propertyName: type 键值对来组成字典
  */
 + (NSDictionary *)ocClassIvarNameTypeDict:(Class)cls;

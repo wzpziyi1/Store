@@ -25,4 +25,13 @@
  字段名是否完全一样
  */
 + (BOOL)isTableRequiredUpdate:(Class)cls uid:(NSString *)uid;
+
+
+/**
+ 更新表，如果代码中model生成的字段与本地数据库表中的字段有不同
+ 那么需要进行数据迁移
+ 1、先将旧表里面的所有与新表字段相同的数据迁移到新表中
+ 2、把旧表删除，更名新表
+ */
++ (BOOL)updateTable:(Class)cls uid:(NSString *)uid;
 @end

@@ -22,4 +22,10 @@
  @return 根据条件产生的准备语句，在准备语句里面可以获取到某一行有多少列，某一列的name、value与类型(real,integer,blob,text)，字典里面装的就是某一行所有列的数据
  */
 + (NSMutableArray <NSMutableDictionary *> *)querySql:(NSString *)sql uid:(NSString *)uid;
+
+
+/**
+ 一次性处理多条sql语句
+ */
++ (BOOL)dealSqls:(NSArray <NSString *>*)sqls uid:(NSString *)uid;
 @end

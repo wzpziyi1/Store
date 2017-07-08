@@ -103,6 +103,21 @@ sqlite3 *_ppDB = nil;
     return allRowArr;
 }
 
++ (BOOL)dealSqls:(NSArray <NSString *>*)sqls uid:(NSString *)uid
+{
+    [self beginTransaction:uid];
+    for (NSString *sql in sqls) {
+        BOOL result = [self deal:sql uid:uid];
+        if (result == NO) {
+            [self rollBackTransaction:uid];
+            return NO;
+        }
+    }
+    
+    [self commitTransaction:uid];
+    return YES;
+}
+
 #pragma makr - private
 
 
@@ -133,4 +148,14 @@ sqlite3 *_ppDB = nil;
     sqlite3_close(_ppDB);
 }
 
++ (void)beginTransaction:(NSString *)uid {
+    [self deal:@"begin transaction" uid:uid];
+}
+
++ (void)commitTransaction:(NSString *)uid {
+    [self deal:@"commit transaction" uid:uid];
+}
++ (void)rollBackTransaction:(NSString *)uid {
+    [self deal:@"rollback transaction" uid:uid];
+}
 @end
