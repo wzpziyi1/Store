@@ -8,6 +8,7 @@
 
 #import "ZYModelTool.h"
 #import <objc/runtime.h>
+#import "ZYModelProtocol.h"
 
 @implementation ZYModelTool
 + (NSString *)tableName:(Class)cls
@@ -17,6 +18,13 @@
 
 + (NSDictionary *)ocClassIvarNameTypeDict:(Class)cls
 {
+    
+    NSArray *ignoreNames = nil;
+    if ([cls respondsToSelector:@selector(ignoreColumnNames)])
+    {
+        ignoreNames = [cls ignoreColumnNames];
+    }
+    
     unsigned int outCount = 0;
     Ivar *varList = class_copyIvarList(cls, &outCount);
     NSMutableDictionary *nameTypeDict = [NSMutableDictionary dictionary];
@@ -29,6 +37,11 @@
         if ([propertyName hasPrefix:@"_"])
         {
             propertyName = [propertyName substringFromIndex:1];
+        }
+        
+        if([ignoreNames containsObject:propertyName])
+        {
+            continue;
         }
         
         NSString *type = [NSString stringWithUTF8String:ivar_getTypeEncoding(var)];

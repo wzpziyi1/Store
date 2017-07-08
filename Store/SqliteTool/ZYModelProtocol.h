@@ -18,6 +18,9 @@
 
 @optional
 
-
+/**
+ 可以忽略某些不需要存储的属性
+ */
++ (NSArray *)ignoreColumnNames;
 
 @end
